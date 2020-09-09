@@ -1,0 +1,263 @@
+:root {
+    --line-height: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bree Serif', serif;
+}
+
+
+.small-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.banner {
+    width: 100%;
+    height: 50vh;
+    background: url(images/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav {
+    width: 100%;
+    height: 60px;
+
+}
+
+nav .logo {
+    line-height: var(--line-height);
+    float: left;
+    margin: 0 100px;
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: var(--line-height);
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0px 20px;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 14px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+nav ul li a.active {
+    background-color: white;
+    color: black;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: white;
+    color: black;
+}
+
+.about {
+    width: 100%;
+    height: 50vh;
+    margin-top: 60px;
+}
+
+.about img {
+    width: 30%;
+    margin: 30px 50px;
+    float: left;
+}
+
+.about .about-text {
+    float: left;
+    width: 52%;
+    margin: 50px auto;
+}
+
+.about .about-text h2 {
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    font-variant-caps: small-caps;
+    margin-bottom: 10px;
+}
+
+.about .about-text p {
+    color: rgba(24, 23, 23, 0.6);
+    font-size: 1em;
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+.mywork {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.mywork h2 {
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    font-variant-caps: small-caps;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cards .card {
+    width: 320px;
+    height: 400px;
+    margin: 10px 20px;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px black;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.cards .card:hover {
+    transform: translateY(-5px);
+}
+
+.cards .card img{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.content h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+    font-variant-caps: small-caps;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content p {
+    color: rgba(24, 23, 23, 0.6);
+    font-size: 1em;
+    padding: 0px 10px;
+    text-align: justify;
+}
+
+.footer {
+    background-color: rgb(38, 38, 38);
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    display: flex;
+}
+
+.footer .contact-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+}
+
+.contact-form label {
+    color: white;
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+.contact-form input[type="text"] {
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 10px;
+    color: rgb(24, 23, 23);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 120px;
+    padding: 10px;
+    color: rgb(24, 23, 23);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+    border: none;
+    outline: none;
+    width: 120px;
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    background: rgb(26, 26, 26);
+    border: 1px solid white;
+    float: right;
+    transition: border 0.5s, color 0.5s;
+}
+
+.contact-form input[type="submit"]:hover {
+    border: 1px solid #ff523b;
+    color: #ff523b;
+}
+
+.footer .contact-information {
+    flex: 1;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.footer .contact-information p{
+    font-size: 1em;
+    margin: 10px;
+}
+
+.footer .contact-information h3{
+    font-size: 1.4em;
+    font-variant: small-caps;
+    margin: 10px;
+}
+
+.footer-bottom {
+    background-color:rgb(26, 26, 26);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+
+
+
